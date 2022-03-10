@@ -1,0 +1,401 @@
+*{
+    margin : 0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+    background-color: rgb(29, 17, 17);
+}
+.header .logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+@media (min-width : 700px) and (max-width : 930px){
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .header .banner {
+        width: 80%;
+    }
+}
+@media (min-width: 400px) and (max-width :700px){
+    .header {
+        flex-direction: column;
+    }
+    .header .logo {
+       margin: 15px auto;
+    }
+    .header .banner {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+/* Header end */
+#hamberger{
+    color: whitesmoke;
+    font-size: 30px;
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#carouselExampleControls{
+    display: none;
+}
+.menu { 
+    background-color: rgb(212, 11, 11);
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.menu ul li {
+    cursor: pointer;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: bold;
+    transition: all ease 0.2s;
+    padding: 20px 15px;
+}
+.menu ul li:hover {
+    opacity: 1;
+}
+
+@media (min-width : 710px) and (max-width : 900px){
+    .menu ul li {
+        
+        list-style: none;
+        color: white;
+        opacity: 0.7;
+        font-weight: bold;
+        transition: all ease 0.2s;
+        padding: 15px;
+        font-size: 15px;
+    }   
+     /* .menu ul li a{
+      font-size: 19px; 
+    }  */
+}
+
+@media (min-width: 400px) and (max-width : 710px){
+    .menu_list{
+   position: absolute;
+   top: 265px;
+   width: 100%;
+   background-color: rgb(57, 57, 87);
+   flex-direction: column;
+   transition: all ease 0.3s;
+   left: -800px;
+   z-index: 909;
+}
+
+    #hamberger {
+        display: block;
+    }
+    
+}
+
+.active {
+    left:  0px;
+}
+
+
+/* contain */
+
+.contain{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 60px;
+}
+.main_news{
+    width: 70%;
+}
+ .news {
+    display: flex;
+    margin: 10px 0px;
+}
+/* .news_left{
+    width: 60%;
+} */
+.news_left img{
+    width: 100%;
+    height: auto;
+}
+/* .news_left span{
+    background-color: rgb(177, 135, 216);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-top-right-radius: 60px;
+     position: relative;
+     top: 10px;
+     left: 10px; */
+/* } */
+/* .news_right{
+    /* border: 1px solid black; */
+    /* width: 40%;
+    height: 280px;
+    background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Kley-Kley/Samphy-2022/febraury-(3)/6213370ab70df_1645426440_medium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px; */
+    /* border: 1px solid black; */
+/* } */ 
+/* .news_right span{
+    background-color: rgb(219, 62, 51);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-top-right-radius: 60px;
+     position: relative;
+     top: 10px;
+     left: 10px;
+} */
+/* contain2 */
+/* .news_left1{
+    width: 60%;
+    /* border: 1px solid black; */
+    /* overflow: hidden;
+    height: 280px;
+    background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/sabay-news/Ent-Int/Korea/Korean-232/621324e9baecb_1645421760_medium.jpg");
+    background-size: 540px;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+/*
+.news_left1 span{
+    background-color: rgb(177, 135, 216);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-top-right-radius: 60px;
+     position: relative;
+     top: 10px;
+     left: 10px;
+} */
+/* 
+.news_right1{
+    border: 1px solid black;
+    width: 40%;
+    height: 280px;
+     background-image:  url("https://cdn.sabay.com/cdn/media.sabay.com/media/sabay-news/Sport-News/Volleyball(2)/National-Team(3)/62131aea291db_1645419240_medium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+.news_right1 span{
+    background-color: rgb(219, 62, 51);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-top-right-radius: 60px;
+     position: relative;
+     top: 10px;
+     left: 10px;
+} */
+
+@media (min-width: 400px) and (max-width : 710px){
+    #carouselExampleControls{
+     display: block;
+ }
+    .main_news{
+        width: 90%;
+    }
+    .contain{
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .news{
+        flex-direction: column;
+        margin: 0px 0px;
+        display: none;
+    }
+    .news_left{
+        width: 100%;
+    background-size: 450px;
+    /* border: 1px solid black; */
+    }
+    .news_left span{
+        top: 40px;
+        left : 90px;
+    }
+    .news_right{
+        width: 100%;
+    background-size: 450px;
+    }
+    .news_right span{
+        top: 40px;
+        left : 90px;
+    }
+/* 2 */
+    .news_left1{
+        width: 100%;
+    background-size: 400px;
+    }
+    .news_left1 span{
+        top: 40px;
+        left : 90px;
+    }
+    .news_right1{
+        width: 100%;
+    background-size: 400px;
+    }
+    .news_right1 span{
+        top: 40px;
+        left : 90px;
+    }
+    .ads{
+        display: none;
+    }
+}
+
+/* conain top end */
+.ads{
+    width: 30%;
+    margin: 10px;
+}
+.ads_1{
+    margin-bottom: 10px;
+}
+.ads_1,.ads_2{
+    height: 280px;
+}
+.ads_1 img {
+    height: 280px;
+}
+.ads_2 img {
+    height: 280px;
+}
+
+/* video */
+
+
+.main_video{
+    width: 75%;
+    margin: auto;
+    border-top: 4px solid red;
+    background-color: rgb(219, 238, 255);
+}
+.video{
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+}
+
+@media (min-width: 400px) and (max-width : 710px){
+    .video{
+        flex-direction: column;
+    }
+}
+
+.video_left,.video_center,.video_right{
+    height: 250px;
+    margin: 0px 8px;
+    
+}
+.video_left img{
+    height: 220px;
+    width: 100%;
+}
+.video_center img{
+    height: 220px;
+    width: 100%;
+}
+.video_right img{
+    height: 220px;
+    width: 100%;
+    float: right;
+}
+.span_video{ 
+    position: relative;
+     top: -324px;
+     background-color: rgb(29, 170, 29);
+     color: white;
+     padding: 10px 20px;
+     font-weight: bold;
+     border-top-right-radius: 30px ;     
+}
+
+@media (min-width: 400px) and (max-width : 710px){
+    .span_video {
+        top: -825px;
+    }
+}
+
+/* Vide bottom */
+
+.video_bottom{
+    width: 90%;
+    margin: auto;
+}
+.video_bottom_left{
+    display: flex;
+}
+.video_bottom_left_top{
+    width: 70%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    /* display: flex; */
+}
+.main_video_bottom_left_top{
+    display: flex;
+}
+.video_bottom_left_top div img{
+    width: 150px;
+    height: 100px;
+}
+
+
+.video_bottom_right_bottom{
+    width: 30%;
+    /* border: 1px solid black; */
+}
+.video_bottom_right_bottom div img{
+    /* box-sizing: border-box; */
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 400px) and (max-width : 710px){
+    .video_bottom_left{
+        flex-direction: column;
+        /* border: 1px solid red; */
+
+    }
+   
+    .main_video_bottom_left_top{
+        flex-direction: column;
+        margin: 0px 100px;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    .main_video_bottom_left_top div {
+        width: 100%;
+    }
+    .main_video_bottom_left_top div img {
+        width: 100%;
+        height: 100px;
+    } 
+    .video_bottom_right_bottom {
+        display: none;
+    }
+    .video_bottom_left_top div img{
+        width: 15s0px;
+        height: 100px;
+    }
+}
