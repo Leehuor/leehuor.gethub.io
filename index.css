@@ -25,7 +25,7 @@
         width: 80%;
     }
 }
-@media (min-width: 400px) and (max-width :700px){
+@media (min-width: 300px) and (max-width :700px){
     .header {
         flex-direction: column;
     }
@@ -91,7 +91,7 @@
     }  */
 }
 
-@media (min-width: 400px) and (max-width : 710px){
+@media (min-width: 300px) and (max-width : 710px){
     .menu_list{
    position: absolute;
    top: 265px;
@@ -209,7 +209,7 @@
      left: 10px;
 } */
 
-@media (min-width: 400px) and (max-width : 710px){
+@media (min-width: 300px) and (max-width : 710px){
     #carouselExampleControls{
      display: block;
  }
@@ -297,7 +297,7 @@
     margin: 20px auto;
 }
 
-@media (min-width: 400px) and (max-width : 710px){
+@media (min-width: 300px) and (max-width : 710px){
     .video{
         flex-direction: column;
     }
@@ -371,7 +371,7 @@
     margin-bottom: 5px;
 }
 
-@media (min-width: 400px) and (max-width : 710px){
+@media (min-width: 300px) and (max-width : 710px){
     .video_bottom_left{
         flex-direction: column;
         /* border: 1px solid red; */
